@@ -1,37 +1,40 @@
 import UIKit
 
 //Задача 1. решение квадратного уравнения: x^2 − 8x + 12 = 0
-/*var a = 1;
-var b = -8;
-var c = 12;
-var x1: Any? = nil;
-var x2: Any? = nil;
+var a: Float = 1;
+var b: Float = -8;
+var c: Float = 12;
 
-var D = ((b * b) - (4 * a * c));
+var x1: Float = 0;
+var x2: Float = 0;
+var D: Float = 0;
+
+D = ((b * b) - (4 * a * c));
 print ("Дискриминант:", D);
 
 if D > 0 {
-    x1 = (((-b) - (D / 2)) / (2 * a));
-    x2 = (((-b) + (D / 2)) / (2 * a));
+    x1 = ((b * -1) - sqrt(D)) / (2 * a);
+    x2 = ((b * -1) + sqrt(D)) / (2 * a);
     print ("Значение x1 =", x1,", Значение x2 =", x2);
 }
 else if D == 0 {
-    x1 = (((-b) + (D / 2)) / (2 * a));
+    x1 = ((b * -1) + sqrt(D)) / (2 * a);
     print ("Значение x1 =", x1);
 }
-else if D < 0 {
+else {
     print ("Дискриминант отрицательный.");
-}*/
+}
 
 
 //Задача 2. Даны катеты прямоугольного треугольника. Найти площадь, периметр и гипотенузу треугольника.
-var a = 10;
-var b = 12;
+var x: Float = 10;
+var y: Float = 12;
 
-var S = (a * b)/2;
-var c = sqrt((Double)(a * a) + (Double)(b * b));
-var p = a + b + Int(c);
+var S = (x * y)/2;
+var C = sqrt((x * x) + (y * y));
+var P = x + y + (C);
 print ("Площадь треугольника равна ", S);
-print ("Длина гипотенузы равна ", c);
-print ("Периметр треугольника равен ", p);
+print ("Длина гипотенузы равна ", C);
+print ("Периметр треугольника равен ", P);
+
 
